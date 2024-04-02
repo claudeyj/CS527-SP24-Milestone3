@@ -133,7 +133,7 @@ def validate(repo_path: Path):
                 print(f"[FAIL] No coverage folder for Evosuite in {dataset.value}-{folder.name}")
                 return
 
-            if not (folder / "Coverage" / "Patched-version-All").exists():
+            if not (folder / "Coverage" / "Buggy-version-All").exists():
                 print(f"[FAIL] No coverage folder for All in {dataset.value}-{folder.name}")
                 return
 
